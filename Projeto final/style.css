@@ -207,7 +207,7 @@ a:hover{
     margin: 3rem 0;
 }
 
-.card.container {
+.card-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -267,17 +267,17 @@ a:hover{
     transition: 0.3s;
 }
 
-.card.hover {
+.card:hover {
     filter: unset;
 }
 
-.card.hover > .card-wrapper::before {
+.card:hover > .card-wrapper::before {
     opacity: 1;
     width: 350px;
     height: 250px;
 }
 
-.card.hover .card-wrapper p{
+.card:hover .card-wrapper p{
     font-size: 14px;
     opacity: 1;
     visibility: visible;
@@ -326,7 +326,7 @@ a:hover{
         text-align: center;
     }
 
-    .card.hover > .card-wrapper::before{
+    .card:hover > .card-wrapper::before{
         height: 190px;
         width: 190px;
         

@@ -11,7 +11,7 @@ body{
 
 .header-wrapper{
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     background: linear-gradient(-45deg, #050404, #2E1C28, #4A1942, #893168);
     background-size: 400% 400%;
     display: flex;
@@ -112,7 +112,7 @@ a:hover{
     transform: rotate(0);
 }
 
-.togggle {
+#toggle {
     display: none;
 }
 
@@ -161,7 +161,7 @@ a:hover{
 
 /*ANIMACAO DO MENU*/
 
-#toggle:checked + ,.checkbox .trace:nth-child(1){
+#toggle:checked + .checkbox .trace:nth-child(1){
     transform: rotate(45deg);
     background-color: #2E1C28;
     top: 47px;

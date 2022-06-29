@@ -238,16 +238,15 @@ a:hover{
     color: rgb(109, 109,109);
 }
 
-.card-wrapper {
+.card-wrapper::before {
     content: '';
     position: absolute;
     height: 100px;
     width: 100px;
     display: block;
-    border: 1 px solid #ffffff;
+    border: 1px solid #ffffff;
     opacity: 0;
     transition: 0.3s;
-
 }
 
 .card-wrapper h2{
@@ -277,7 +276,7 @@ a:hover{
     height: 250px;
 }
 
-.card:hover .card-wrapper p{
+.card:hover > .card-wrapper p{
     font-size: 14px;
     opacity: 1;
     visibility: visible;
